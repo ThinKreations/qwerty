@@ -71,8 +71,8 @@
                                 
                                 <br><br>
                                 <button type="button" class="f_button_inicio" onclick="window.location.href='login.jsp'"><font color="#ffffff"><h2>?Registrar?</h2></font></button>
-                                <br>*Para sacar las coordenadas de Google Maps, entre a Google Maps, dir�jase a la ubicaci�n de su consultorio, de clic derecho y seleccione las coordenadas.
-                                <br>Su informaci�n no se ver� comprometida en ning�n momento, pues s�lo se usar� de ser necesario.
+                                <br>*Para sacar las coordenadas de Google Maps, entre a Google Maps, diríjase a la ubicaci�n de su consultorio, de clic derecho y seleccione las coordenadas.
+                                <br>Su información no se verá comprometida en ning�n momento, pues sólo se usará de ser necesario.
                             </td>
                             </table>
                         </center>
