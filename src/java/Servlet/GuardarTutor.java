@@ -1,16 +1,16 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Servlet;
 
-import Control.AccionesPaciente;
-import Modelo.Paciente;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Date;
-import java.util.Enumeration;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -30,76 +30,17 @@ public class GuardarTutor extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
+        try ( PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            
-            /*
-            
-            Generar la sesion del usuario
-            
-            */
-            
-            HttpSession sesionCli = request.getSession(true);
-            
-            String idsesion = sesionCli.getId();
-            
-            long fechacreacion = sesionCli.getCreationTime();
-            
-            long fechaultimoacceso = sesionCli.getLastAccessedTime();
-            
-            //vamos a generar "cookie" de la sesion
-            
-            Integer cuenta = (Integer)sesionCli.getAttribute("cuenta.ss");
-            
-            if(cuenta == null){
-                cuenta = new Integer(1);
-            }else{
-                cuenta = new Integer(cuenta.intValue()+1);
-            }
-            
-            sesionCli.setAttribute("cuenta.ss", cuenta);
-            
-            //vamos a imprimir los valores de la sesion
-            
-            System.out.println("Id Sesion: "+idsesion);
-            System.out.println("Fecha en que fue creada: " + new Date(fechacreacion).toString());
-            System.out.println("Fecha de ultimo acceso: "+ new Date(fechaultimoacceso).toString());
-            
-            //vamos a visualizar los parametros del hasmap
-            
-            Enumeration parametrosSesion = sesionCli.getAttributeNames();
-            
-            while(parametrosSesion.hasMoreElements()){
-                String parametros = (String)parametrosSesion.nextElement();
-                Object valor = sesionCli.getAttribute(parametros);
-                System.out.println("El parametro es: " +parametros 
-                                    + "Su valor es: " +valor.toString());
-            }
-            
-            String nom, pass, email, nomUsu;
-            
-            nom = request.getParameter("nombre_01");
-            nomUsu = request.getParameter("usuario_01");
-            pass = request.getParameter("pass_01");
-            email = request.getParameter("correo_01");
-            
-            Paciente p = new Paciente();
-            
-            p.setNombre(nom);
-            p.setNombreusu(nomUsu);
-            p.setPassword(pass);
-            p.setEmail(email);
-            
-            
-            int estatus = AccionesPaciente.registrarPaciente(p);
-            
-            
-            if(estatus > 0){
-                response.sendRedirect("index.html");
-            }else{
-                response.sendRedirect("errorPaciente.jsp");
-            }
-            
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet GuardarTutor</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet GuardarTutor at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
         }
     }
 

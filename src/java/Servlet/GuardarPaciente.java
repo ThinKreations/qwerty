@@ -74,7 +74,7 @@ public class GuardarPaciente extends HttpServlet {
                 String parametros = (String)parametrosSesion.nextElement();
                 Object valor = sesionCli.getAttribute(parametros);
                 System.out.println("El parametro es: " +parametros 
-                                    + "Su valor es: " +valor.toString());
+                                    + " Su valor es: " +valor.toString());
             }
             
             String nom, pass, email, nomUsu;
@@ -96,9 +96,9 @@ public class GuardarPaciente extends HttpServlet {
             
             
             if(estatus > 0){
-                response.sendRedirect("index.html");
+                response.sendRedirect("../../webapp/adees_html/login.jsp");
             }else{
-                response.sendRedirect("errorPaciente.jsp");
+                response.sendRedirect("../../webapp/adees_html/errorPaciente.jsp");
             }
             
         }

@@ -24,6 +24,10 @@
         <servlet-name>GuardarTutor</servlet-name>
         <servlet-class>Servlet.GuardarTutor</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GuardarPsicologo</servlet-name>
+        <servlet-class>Servlet.GuardarPsicologo</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GuardarPaciente</servlet-name>
         <url-pattern>/GuardarPaciente</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>GuardarTutor</servlet-name>
         <url-pattern>/GuardarTutor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuardarPsicologo</servlet-name>
+        <url-pattern>/GuardarPsicologo</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

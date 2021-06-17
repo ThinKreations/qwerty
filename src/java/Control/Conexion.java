@@ -1,7 +1,24 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Control;
 
-import java.sql.*;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
+/**
+ *
+ * @author Ely
+ */
 public class Conexion {
 //        url ="jdbc:mysql://us-cdbr-east-04.cleardb.com:3306/heroku_9a63a903b687055";
 //        userName = "b7f156ad6978ec";
@@ -11,8 +28,8 @@ public class Conexion {
             Class.forName("com.mysql.jdbc.Driver");
             String url, userName, password;
             url = "jdbc:mysql://localhost/tst";
-            userName = "ThinKreations";
-            password = "XIL2MNLPiv9D";
+            userName = "Kiramasu2003";
+            password = "Luis18!Mic";
             return DriverManager.getConnection(url, userName, password);
         
         }catch(SQLException sq){

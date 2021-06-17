@@ -1,7 +1,21 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Modelo;
 
-import Control.*;
-import java.sql.*;
+import Control.Conexion;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  *
@@ -22,7 +36,7 @@ public class Paciente {
         ResultSet rs = null;
         try{
             con = Conexion.getConexion();
-            String q = "select * from MUsuario where user_usuario = ? AND pass_usuario = ?";
+            String q = "select * from Paciente where NombreUsu = ? AND Contrasena = ?";
             ps = con.prepareStatement(q);
             ps.setString(1, user);
             ps.setString(2, pass);
