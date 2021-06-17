@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <servlet>
-        <servlet-name>GuardarPaciente</servlet-name>
-        <servlet-class>Servlet.GuardarPaciente</servlet-class>
+        <servlet-name>Conexion</servlet-name>
+        <servlet-class>Control.Conexion</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AccionesPaciente</servlet-name>
         <servlet-class>Control.AccionesPaciente</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Conexion</servlet-name>
-        <servlet-class>Control.Conexion</servlet-class>
+        <servlet-name>AccionesPsicologo</servlet-name>
+        <servlet-class>Control.AccionesPsicologo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccionesTutor</servlet-name>
+        <servlet-class>Control.AccionesTutor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Tutor</servlet-name>
+        <servlet-class>Modelo.Tutor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Psicologo_Psiquiatra</servlet-name>
+        <servlet-class>Modelo.Psicologo_Psiquiatra</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Paciente</servlet-name>
@@ -21,24 +33,40 @@
         <servlet-class>Servlet.VerificarUsuario</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>GuardarTutor</servlet-name>
-        <servlet-class>Servlet.GuardarTutor</servlet-class>
+        <servlet-name>GuardarPaciente</servlet-name>
+        <servlet-class>Servlet.GuardarPaciente</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>GuardarPsicologo</servlet-name>
         <servlet-class>Servlet.GuardarPsicologo</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GuardarTutor</servlet-name>
+        <servlet-class>Servlet.GuardarTutor</servlet-class>
+    </servlet>
     <servlet-mapping>
-        <servlet-name>GuardarPaciente</servlet-name>
-        <url-pattern>/GuardarPaciente</url-pattern>
+        <servlet-name>Conexion</servlet-name>
+        <url-pattern>/Conexion</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>AccionesPaciente</servlet-name>
         <url-pattern>/AccionesPaciente</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Conexion</servlet-name>
-        <url-pattern>/Conexion</url-pattern>
+        <servlet-name>AccionesPsicologo</servlet-name>
+        <url-pattern>/AccionesPsicologo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccionesTutor</servlet-name>
+        <url-pattern>/AccionesTutor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Tutor</servlet-name>
+        <url-pattern>/Tutor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Psicologo_Psiquiatra</servlet-name>
+        <url-pattern>/Psicologo_Psiquiatra</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Paciente</servlet-name>
@@ -49,12 +77,16 @@
         <url-pattern>/VerificarUsuario</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>GuardarTutor</servlet-name>
-        <url-pattern>/GuardarTutor</url-pattern>
+        <servlet-name>GuardarPaciente</servlet-name>
+        <url-pattern>/GuardarPaciente</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>GuardarPsicologo</servlet-name>
         <url-pattern>/GuardarPsicologo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuardarTutor</servlet-name>
+        <url-pattern>/GuardarTutor</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

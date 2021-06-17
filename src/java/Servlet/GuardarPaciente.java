@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author demon
+ * @author diosito
  */
 
 public class GuardarPaciente extends HttpServlet {
