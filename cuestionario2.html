@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="estilo-form2.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload = "document.forms[0][\'foco\'].focus()">
+<div id="entrada">
+    <h2>Cuestionario</h2>
+    <form name="acceso" action="mailto:Zurikatniss@gmail.com" method="post">
+    <p>
+    <b>De forma general¿Cómo se siente con la aplicación?(1=Me gusta, 2=Bien, 3=Más o menos, 4=Podría mejorar, 5=No me gusta)</b><br />
+    <input type="radio" name="sentir" value="Me gusta" required=""/>1<br/>
+    <input type="radio" name="sentir" value="Bien" required=""/>2<br/>
+    <input type="radio" name="sentir" value="Más o menos" required=""/>3<br/>
+    <input type="radio" name="sentir" value="Podría mejorar" required=""/>4<br/>
+    <input type="radio" name="sentir" value="No me gusta" required=""/>5<br/>
+    <br />
+    Escriba aquí el porque de su respuesta anterior:
+    <br>
+    <textarea class="text" name="comentarios" id="foco" rows="10" cols="40" maxlength="180" required=""/></textarea><br/>
+    <br>
+    <b>¿Cómo se siente después de haber realizado el ejercicio?(1=Más relajado, 2=Bien, 3=Más o menos, 4=Igual, 5=Peor)</b><br />
+    <input type="radio" name="sentir2" value="Más relajado" required=""/>1<br/>
+    <input type="radio" name="sentir2" value="Bien" required=""/>2<br/>
+    <input type="radio" name="sentir2" value="Más o menos" required=""/>3<br/>
+    <input type="radio" name="sentir2" value="Igual" required=""/>4<br/>
+    <input type="radio" name="sentir2" value="Peor" required=""/>5<br/>
+    <br />
+    Escriba aquí el porque de su respuesta anterior:
+    <br>
+    <textarea class="text" name="comentarios" id="foco" rows="10" cols="40" maxlength="180"" required=""/></textarea><br/>
+    <br>
+    <b>&#191;Qu&eacute; considera a sido el mayor causante de su estr&eacute;s?</b><br />
+    <input type="radio" name="problema" value="Problemas conmigo mismo" required=""/>Problemas conmigo mismo<br/>
+    <input type="radio" name="problema" value="Problemas laborales" required=""/>Problemas laborales<br/>
+    <input type="radio" name="problema" value="Problemas escolares" required=""/>Problemas escolares<br/>
+    <input type="radio" name="problema" value="Problemas familiares" required=""/>Problemas familiares<br/>
+    <input type="radio" name="problema" value="Problemas sociales" required=""/>Problemas sociales<br/>
+    <input type="radio" name="problema" value="Críticas hacia mí" required=""/>Críticas hacia mí<br/>
+    <input type="radio" name="problema" value="La incertidumbre sobre el futuro" required=""/>La incertidumbre sobre el futuro<br/>
+    <br />
+    <b>¿Qué consecuencias ha tenido por estar bajo estrés?</b><br />
+    <input type="radio" name="respuesta3" value="Presión arterial alta" required=""/>Presión arterial alta<br/>
+    <input type="radio" name="respuesta3" value="Bajadas de defensas" required=""/>Bajadas de defensas<br/>
+    <input type="radio" name="respuesta3" value="Diabetes" required=""/>Diabetes<br/>
+    <input type="radio" name="respuesta3" value="Insuficiencia cardíaca" required=""/>Insuficiencia cardíaca<br/>
+    <input type="radio" name="respuesta3" value="Migrañas" required=""/>Migrañas<br/>
+    <input type="radio" name="respuesta3" value="Acné" required=""/>Acné<br/>
+    <input type="radio" name="respuesta3" value="Eccemas" required=""/>Eccemas<br/>
+    <input type="radio" name="respuesta3" value="Depresión" required=""/>Depresión<br/>
+    <input type="radio" name="respuesta3" value="Ansiedad" required=""/>Ansiedad<br/>
+    <input type="radio" name="respuesta3" value="Contracturas musculares" required=""/>Contracturas musculares<br/>
+    <input type="radio" name="respuesta3" value="Bruxismo" required=""/>Bruxismo<br/>
+    <input type="radio" name="respuesta3" value="Otro" required=""/>Otro<br/>
+    <input type="radio" name="respuesta3" value="Ninguna de las anteriores" required=""/>Ninguna de las anteriores<br/>
+    <br />
+    ¿Qué otros ejercicios le gustaría ver en la aplicación?:
+    <br>
+    <textarea class="text" name="comentarios" id="foco" rows="10" cols="40" maxlength="180"" required=""/></textarea><br/>
+    <br>
+    <input class="boton" type="submit" value="Enviar"/>
+    </p>
+    </form>
+</div>
+</body>
+</html>

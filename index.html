@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="estilo-form.css" rel="stylesheet" type="text/css"/>
+    <script src="./js/validacion.js" ></script>
+</head>
+<body onload = "document.forms[0][\'foco\'].focus()">
+<div id="entrada">
+    <h2>Cuestionario</h2>
+    <form name="acceso" action="mailto:Zurikatniss@gmail.com" method="post">
+    <p>
+    Nombre:
+    <input class="box" type="text" name="nombre" maxlength="30" id="foco" onkeypress="return validarn(event)" required=""/><br/>
+    <br>
+    <input type="radio" name="sexo" value="Hombre" required=""/>Hombre
+    <input type="radio" name="sexo" value="Mujer" required=""/>Mujer
+    <br />
+    <p>Introduzca su fecha de nacimiento</p>
+    <input type="date" name="fecha" required="" onkeypress="return validarn(event)" onkeypress="return validate_fecha(fecha)" onkeypress="return isValidDate(day,month,year)" required="">
+    <br><br>
+    <b>&#191;Qu&eacute; considera a sido el mayor causante de su estr&eacute;s?</b><br />
+    <input type="radio" name="problema" value="Problemas conmigo mismo" required=""/>Problemas conmigo mismo<br/>
+    <input type="radio" name="problema" value="Problemas laborales" required=""/>Problemas laborales<br/>
+    <input type="radio" name="problema" value="Problemas escolares" required=""/>Problemas escolares<br/>
+    <input type="radio" name="problema" value="Problemas familiares" required=""/>Problemas familiares<br/>
+    <input type="radio" name="problema" value="Problemas sociales" required=""/>Problemas sociales<br/>
+    <input type="radio" name="problema" value="Críticas hacia mí" required=""/>Críticas hacia mí<br/>
+    <input type="radio" name="problema" value="La incertidumbre sobre el futuro" required=""/>La incertidumbre sobre el futuro<br/>
+    <br />
+    <b>Aparte del estrés ¿Qué otro padecimiento tiene?</b><br />
+    <select name="color" required="">
+    <option value="Depresión" required="">Depresión</option>
+    <option value="Ansiedad" required="">Ansiedad</option>
+    <option value="Trastorno bipolar" required="">Trastorno bipolar</option>
+    <option value="Trastornos de la alimentación" required="">Trastornos de la alimentación</option>
+    <option value="TOC" required="">TOC</option>
+    <option value="Esquizofrenia" required="">Esquizofrenia</option>
+    <option value="Alzheimer" required="">Alzheimer</option>
+    <option value="TDAH" required="">TDAH</option>
+    <option value="Trastorno límite de la personalidad" required="">Trastorno límite de la personalidad</option>
+    <option value="Autismo" required="">Autismo</option>
+    <option value="Otro" required="">Otro</option>
+    <option value="Ninguno de los anteriores" required="">Ninguno de los anteriores</option>
+    </select><br />
+    <br>
+    <b>¿Toma o ha tomado terapia?</b><br />
+    <input type="radio" name="respuesta2" value="Actualmente estoy tomando terapia" required=""/>Actualmente estoy tomando terapia<br/>
+    <input type="radio" name="respuesta2" value="He tomado terapia" required=""/>He tomado terapia<br/>
+    <input type="radio" name="respuesta2" value="Nunca he tomado terapia" required=""/>Nunca he tomado terapia<br/>
+    <br />
+    <b>¿Qué consecuencias ha tenido por estar bajo estrés?</b><br />
+    <input type="radio" name="respuesta3" value="Presión arterial alta" required=""/>Presión arterial alta<br/>
+    <input type="radio" name="respuesta3" value="Bajadas de defensas" required=""/>Bajadas de defensas<br/>
+    <input type="radio" name="respuesta3" value="Diabetes" required=""/>Diabetes<br/>
+    <input type="radio" name="respuesta3" value="Insuficiencia cardíaca" required=""/>Insuficiencia cardíaca<br/>
+    <input type="radio" name="respuesta3" value="Migrañas" required=""/>Migrañas<br/>
+    <input type="radio" name="respuesta3" value="Acné" required=""/>Acné<br/>
+    <input type="radio" name="respuesta3" value="Eccemas" required=""/>Eccemas<br/>
+    <input type="radio" name="respuesta3" value="Depresión" required=""/>Depresión<br/>
+    <input type="radio" name="respuesta3" value="Ansiedad" required=""/>Ansiedad<br/>
+    <input type="radio" name="respuesta3" value="Contracturas musculares" required=""/>Contracturas musculares<br/>
+    <input type="radio" name="respuesta3" value="Bruxismo" required=""/>Bruxismo<br/>
+    <input type="radio" name="respuesta3" value="Otro" required=""/>Otro<br/>
+    <input type="radio" name="respuesta3" value="Ninguna de las anteriores" required=""/>Ninguna de las anteriores<br/>
+    <br />
+    <input class="boton" type="submit" value="Enviar"/>
+    </p>
+    </form>
+</div>
+</body>
+</html>
