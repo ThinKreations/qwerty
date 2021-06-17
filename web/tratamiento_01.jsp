@@ -17,7 +17,7 @@
     </head>
     <body>
         <font face="Rubik">
-            <center><img src="../resources/menu_icon.png" class="menu_icon"></center>
+            <center><img src="./resources/menu_icon.png" class="menu_icon"></center>
             <div class="ADEEScontainer_0">
                 
                 
