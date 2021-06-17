@@ -25,7 +25,7 @@
                 </div>
                 <div class="menu_tipo">
                     <font size="6"><p><a href="signin0.jsp" class="link">?Volver?</a></p></font>
-                    <form action="" class="form_1" id="sign_01">
+                    <form method="post" action="GuardarTutor" class="form_1" id="sign_10">
                         <center>
                             <table class="sign">
                                 <td>
@@ -55,7 +55,7 @@
                                 <h2>C�digo de Terapia del Tutorado:</h2>
                                 <input type="password" class="f_input_1" id="codigo_02" placeholder="C�digo">
                                 <br><br>
-                                <button type="button" class="f_button_inicio" onclick="window.location.href='login.jsp'"><font color="#ffffff"><h2>?Registrar?</h2></font></button>
+                                <button type="submit" class="f_button_inicio" onclick="window.location.href='login.jsp'"><font color="#ffffff"><h2>?Registrar?</h2></font></button>
                                 <br>
                                 Su informaci�n no se ver� comprometida en ning�n momento, pues s�lo se usar� de ser necesario.
                                 </td>

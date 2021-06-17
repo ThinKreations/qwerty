@@ -25,7 +25,7 @@
                 </div>
                 <div class="menu_tipo">
                     <font size="6"><p><a href="signin0.jsp" class="link">?Volver?</a></p></font>
-                    <form action="" class="form_1" id="sign_01">
+                    <form method="post" action="GuardarPsicologo" class="form_1" id="sign_11">
                         <center>
                             <table class="sign">
                                 <td>
@@ -70,7 +70,7 @@
                                 <br><br>
                                 
                                 <br><br>
-                                <button type="button" class="f_button_inicio" onclick="window.location.href='login.jsp'"><font color="#ffffff"><h2>?Registrar?</h2></font></button>
+                                <button type="submit" class="f_button_inicio" onclick="window.location.href='login.jsp'"><font color="#ffffff"><h2>?Registrar?</h2></font></button>
                                 <br>*Para sacar las coordenadas de Google Maps, entre a Google Maps, diríjase a la ubicaci�n de su consultorio, de clic derecho y seleccione las coordenadas.
                                 <br>Su información no se verá comprometida en ning�n momento, pues sólo se usará de ser necesario.
                             </td>
