@@ -14,6 +14,7 @@
         <title>Paciente</title>
         <link rel="stylesheet" href="./css/adees.css">
         <link rel="shortcut icon" href="./resources/brain.png">
+        <script src="./js/validacion.js" ></script>
     </head>
     <body>
         <font face="Rubik">
@@ -43,7 +44,7 @@
                                 <input type="text" class="f_input_1" name="correo_01" id="correo_01" placeholder="Email">
                                 <br><br>
                                 <h2>Contraseña:</h2>
-                                <input type="password" class="f_input_1" name="pass_01" id="pass_01" placeholder="Contrase�a">
+                                <input type="password" class="f_input_1" name="pass_01" id="pass_01" placeholder="Contraseña" minlength="8" return validarn(event)>
                                 <br><br>
                                 <h2>Confirmar Contraseña:</h2>
                                 <input type="password" class="f_input_1" name="pass_01" id="confirmar_01" placeholder="Confirmar">

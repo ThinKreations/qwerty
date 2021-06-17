@@ -32,7 +32,7 @@
                                 <h1>Registrate - Profesional</h1>
                                 <br>
                                 <h2>Nombre:</h2>
-                                <input type="text" class="f_input_1" id="nombre_03" placeholder="Nombre">
+                                <input type="text" class="f_input_1" id="nombre_03" placeholder="Nombre" >
                                 <br><br>
                                 <h2>Apellido Paterno:</h2>
                                 <input type="text" class="f_input_1" id="apellidop_03" placeholder="Paterno">
