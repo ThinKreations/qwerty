@@ -16,6 +16,14 @@
         <servlet-name>Paciente</servlet-name>
         <servlet-class>Modelo.Paciente</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VerificarUsuario</servlet-name>
+        <servlet-class>Servlet.VerificarUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GuardarTutor</servlet-name>
+        <servlet-class>Servlet.GuardarTutor</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GuardarPaciente</servlet-name>
         <url-pattern>/GuardarPaciente</url-pattern>
@@ -31,6 +39,14 @@
     <servlet-mapping>
         <servlet-name>Paciente</servlet-name>
         <url-pattern>/Paciente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerificarUsuario</servlet-name>
+        <url-pattern>/VerificarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuardarTutor</servlet-name>
+        <url-pattern>/GuardarTutor</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
