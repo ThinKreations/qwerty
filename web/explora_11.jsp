@@ -12,12 +12,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ADEES | Explora</title>
-        <link rel="stylesheet" href="../css/adees.css">
-        <link rel="shortcut icon" href="../resources/brain.png">
+        <link rel="stylesheet" href="./css/adees.css">
+        <link rel="shortcut icon" href="./resources/brain.png">
     </head>
     <body>
         <font face="Rubik">
-            <center><img src="../resources/menu_icon.png" class="menu_icon"></center>
+            <center><img src="./resources/menu_icon.png" class="menu_icon"></center>
             <div class="ADEEScontainer_0">
                 <font color="#ffffff">
                     <nav class="lateral">
